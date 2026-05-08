@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudIA – Asistente Virtual</title>
+
+  <!-- Estilos simples -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f6fa;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #0047bb;
+      color: white;
+      padding: 20px;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>CloudIA</h1>
+    <p>Asistente virtual</p>
+  </header>
+
+  <main>
+    <h2>¿En qué puedo ayudarte?</h2>
+    <p>Usa el chat para resolver tus consultas.</p>
+  </main>
+
+  <!-- ✅ Script Genesys -->
+  <script type="text/javascript" charset="utf-8">
+    (function (g, e, n, es, ys) {
+      g['_genesysJs'] = e;
+      g[e] = g[e] || function () {
+        (g[e].q = g[e].q || []).push(arguments)
+      };
+      g[e].t = 1 * new Date();
+      g[e].c = es;
+      ys = document.createElement('script'); 
+      ys.async = 1; 
+      ys.src = n; 
+      ys.charset = 'utf-8'; 
+      document.head.appendChild(ys);
+    })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
+      environment: 'prod',
+      deploymentId: 'eae7f8c7-b205-4871-a0c5-9a8ddb52dc1f'
+    });
+  </script>
+
+</body>
+</html>
