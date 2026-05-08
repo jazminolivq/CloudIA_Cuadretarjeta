@@ -6,37 +6,57 @@
   <title>CloudIA – Asistente Virtual</title>
 
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f5f6fa; }
-    header { background: #0047bb; color: #fff; padding: 18px 20px; }
-    main { padding: 28px 20px; }
-    .card { max-width: 900px; margin: 0 auto; background: #fff; padding: 18px 20px; border-radius: 12px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f6fa;
+    }
+    header {
+      background: #0047bb;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 30px 20px;
+    }
+    .card {
+      max-width: 900px;
+      margin: auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
+
   <header>
-    <h1 style="margin:0;">CloudIA</h1>
-    <p style="margin:6px 0 0;">Asistente virtual</p>
+    <h1>CloudIA</h1>
+    <p>Asistente virtual</p>
   </header>
 
   <main>
     <div class="card">
-      <h2 style="margin-top:0;">¿En qué puedo ayudarte?</h2>
-      <p>Abre el chat para resolver tus consultas.</p>
+      <h2>¿En qué puedo ayudarte?</h2>
+      <p>Utiliza el chat para resolver tus consultas.</p>
     </div>
   </main>
 
-  <!-- Genesys Web Messenger Bootstrap -->
+  <!-- ✅ Genesys Web Messenger -->
   <script type="text/javascript" charset="utf-8">
     (function (g, e, n, es, ys) {
       g['_genesysJs'] = e;
       g[e] = g[e] || function () {
-        (g[e].q = g[e].q || []).push(arguments)
+        (g[e].q = g[e].q || []).push(arguments);
       };
       g[e].t = 1 * new Date();
       g[e].c = es;
+
       ys = document.createElement('script');
-      ys.async = 1;
+      ys.async = true;
       ys.src = n;
       ys.charset = 'utf-8';
       document.head.appendChild(ys);
@@ -45,6 +65,6 @@
       deploymentId: 'eae7f8c7-b205-4871-a0c5-9a8ddb52dc1f'
     });
   </script>
+
 </body>
 </html>
-``
