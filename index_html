@@ -1,45 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CloudIA – Asistente Virtual</title>
 
-  <!-- Estilos simples -->
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f5f6fa;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    header {
-      background-color: #0047bb;
-      color: white;
-      padding: 20px;
-    }
-
-    main {
-      padding: 40px 20px;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f6fa; }
+    header { background: #0047bb; color: #fff; padding: 18px 20px; }
+    main { padding: 28px 20px; }
+    .card { max-width: 900px; margin: 0 auto; background: #fff; padding: 18px 20px; border-radius: 12px; }
   </style>
 </head>
 
 <body>
-
   <header>
-    <h1>CloudIA</h1>
-    <p>Asistente virtual</p>
+    <h1 style="margin:0;">CloudIA</h1>
+    <p style="margin:6px 0 0;">Asistente virtual</p>
   </header>
 
   <main>
-    <h2>¿En qué puedo ayudarte?</h2>
-    <p>Usa el chat para resolver tus consultas.</p>
+    <div class="card">
+      <h2 style="margin-top:0;">¿En qué puedo ayudarte?</h2>
+      <p>Abre el chat para resolver tus consultas.</p>
+    </div>
   </main>
 
-  <!-- ✅ Script Genesys -->
+  <!-- Genesys Web Messenger Bootstrap -->
   <script type="text/javascript" charset="utf-8">
     (function (g, e, n, es, ys) {
       g['_genesysJs'] = e;
@@ -48,16 +35,15 @@
       };
       g[e].t = 1 * new Date();
       g[e].c = es;
-      ys = document.createElement('script'); 
-      ys.async = 1; 
-      ys.src = n; 
-      ys.charset = 'utf-8'; 
+      ys = document.createElement('script');
+      ys.async = 1;
+      ys.src = n;
+      ys.charset = 'utf-8';
       document.head.appendChild(ys);
     })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
       environment: 'prod',
       deploymentId: 'eae7f8c7-b205-4871-a0c5-9a8ddb52dc1f'
     });
   </script>
-
 </body>
 </html>
